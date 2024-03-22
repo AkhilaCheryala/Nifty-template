@@ -1,0 +1,34 @@
+.header{
+    position:sticky;
+    z-index: 1000;
+    top: 0;
+    background-color: white;
+}
+.min-bar{
+background-color: white;
+display: flex;
+width: max-content;
+font-size: 14px;
+color: grey;
+gap: 10px;
+margin: 0 auto;
+
+}
+.min-bar p:hover{
+    color: white;
+    background-color: rgb(93, 168, 248);
+    padding: 2px;
+    border-radius: 2px;
+}
+.logo{
+    width: 1.5rem;
+    height: 1.5rem;
+
+}
+.logo-container{
+text-align: left;
+
+}
+.bi-arrow-up-short{
+    color: rgb(138, 244, 138);
+}
