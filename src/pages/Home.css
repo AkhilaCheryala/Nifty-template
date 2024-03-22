@@ -1,0 +1,121 @@
+
+body{
+    background-color:rgb(243, 248, 252);
+}
+p{
+    margin: 3px;
+}
+h4{
+    display: block;
+    text-align: left;
+    
+}
+.graph-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+   gap: 2rem;
+    margin-top: 4rem;
+  }
+  .bi-info-circle{
+  position: absolute;
+  top: -3.8rem;
+  right: -1.2rem;
+  color: gray;
+  }
+  .graph {
+    position: relative;
+    background-color: white;
+    padding:  0 6rem;
+   
+  }
+  .box-1,.box-2,.box-3,.box-4{
+    background-color: white;
+    padding: .5rem 2rem 1rem 2rem;
+  }
+  
+  .graph-container img {
+    max-width: 300px;
+    height: 100px;
+  }
+  
+  .p_summary, .p_support, .p_mvg, .p_oscillators {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 1rem;
+    height: 1rem;
+  }
+  .bar-values{
+    display: flex;
+    margin: 1rem;
+    justify-content:center;
+    gap: 3.5rem;
+    font-size: 13px;
+  }
+  .btn{
+    padding: 3px 12px;
+    border-radius: 3px;
+    margin: 5px 0;
+  }
+  .bearish{
+    background-color: #ffe2eb;
+    color: red;
+    font-size:13px;
+  }
+ .neutral{
+    background-color: rgb(235, 239, 245) ;
+    color: grey;
+    font-size:13px;
+ }
+ .bullish{
+    background-color: rgb(226, 255, 213);
+    color: rgb(14, 230, 14);
+    font-size:13px;
+ }
+  .bearish_2{
+    background-color:rgb(255, 245, 230);
+    color: rgb(255, 106, 0);
+    font-size:13px;
+  }
+ .bullish_2{
+    background-color:rgb(224, 243, 255);
+    color: rgb(14, 111, 230);
+    font-size:13px;
+ }
+ 
+ 
+  .values-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    margin: 1.5rem 0;
+  }
+  .value-1{
+font-size: 14px;
+  }
+  .value-2{
+    color: rgb(158, 155, 155);
+    font-size: 12px;
+  }
+  .values{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+ 
+    column-gap: 14rem;
+    
+  }
+  .values-grid_2{
+   padding: 3rem;
+   text-align: left;
+   height: 50px;
+   overflow-y: hidden;
+   margin-bottom: 1rem;
+  }
+  .view-more{
+    position: absolute;
+    color: rgb(75, 73, 73);
+   
+  }
