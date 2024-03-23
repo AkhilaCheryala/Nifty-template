@@ -39,14 +39,14 @@ h4{
     height: 100px;
   }
   
-  .p_summary, .p_support, .p_mvg, .p_oscillators {
+  /* .p_summary, .p_support, .p_mvg, .p_oscillators {
     position: absolute; 
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
     width: 1rem;
     height: 1rem;
-  }
+  } */
   .bar-values{
     display: flex;
     margin: 1rem;
@@ -116,7 +116,7 @@ font-size: 14px;
    text-align: left;
    height: 63px;
    padding: 1rem;
-   overflow-y: hidden;
+  overflow-y: hidden;
    margin-bottom: 1rem;
    position: relative;
   }

@@ -1,0 +1,37 @@
+/* .Random-Values{
+    padding: 3rem;
+    text-align: left;
+    height: 63px;
+    padding: 1rem;
+    overflow-y: hidden;
+    margin-bottom: 1rem;
+    position: relative;
+   } */
+   .view-more{
+     position: absolute;
+     color: rgb(75, 73, 73);
+    bottom: -7px;
+    right: -3px;
+   }
+ .s{
+   font-size: 12px;
+   background-color: #fac7c7;
+   padding: 3px 4px;
+   border-radius: 2px;
+   margin: 0 5px;
+ }
+ .n{
+   font-size: 12px;
+   background-color: #d1fac7;
+   padding:3px 4px;
+   border-radius: 2px;
+   margin: 0 5px;
+ }
+ .values{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+ font-size: 14px;
+    column-gap: 14rem;
+    margin: 3px 0;
+    
+  }
