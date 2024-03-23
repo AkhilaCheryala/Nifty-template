@@ -91,8 +91,8 @@ import Values from '../components/Values';
                 <div> <p className="g-value-bullish">6</p><p className=" bullish_2 btn">Bullish</p></div>
               </div>
              
-              <div className="values-grid_2"><Random selectedTimeInterval={selectedTimeInterval}/>
-              </div>
+              <Random selectedTimeInterval={selectedTimeInterval}/>
+            
          </div>
          <div className="box-4">
             <h4>Oscillators</h4>
@@ -113,8 +113,8 @@ import Values from '../components/Values';
                 <div><p className="g-value-neutral">12</p> <p className=" neutral btn">Neutral</p></div>
                 <div> <p className="g-value-bullish">6</p><p className=" bullish_2 btn">Bullish</p></div>
               </div>
-              <div className="values-grid_2"><Random selectedTimeInterval={selectedTimeInterval}/>
-              </div>
+             <Random selectedTimeInterval={selectedTimeInterval}/>
+              
           </div>
           </div>
     </div>

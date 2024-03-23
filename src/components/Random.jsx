@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-
+import './Random.css';
 const Random = ({ selectedTimeInterval }) => {
     const [randomValues, setRandomValues] = useState([]);
-    
+    const [showMore, setShowMore] = useState(false);
     useEffect(() => {
         if (selectedTimeInterval !== null) {
             generateRandomValues();
@@ -29,10 +29,15 @@ const Random = ({ selectedTimeInterval }) => {
         ];
         setRandomValues(updatedData);
     };
-
+ const toggleShowMore =()=>{
+    setShowMore(!showMore);
+ }
     return (
-        <div className="Random-values">
-            <p className="view-more">view more<span className="bi bi-caret-down-fill"></span> </p>
+        <div className={`Random-values ${showMore ? 'open' : ''}`}>
+             <button className="view-more" onClick={toggleShowMore}>
+                {showMore ? "view less" : "view more"}
+                <span className={`bi bi-caret-${showMore ? 'up' : 'down'}-fill`}></span>
+            </button>
             {randomValues.map(({ key, value }) => (
                 <div className="values" key={key}>
                     <p> <span className={'s'||'n'}>s</span>{key}

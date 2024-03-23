@@ -15,7 +15,20 @@ function App() {
          <Route exact path='./Components/Values' element ={<Values/>}/>
          <Route exact path='./Component/Parent' element ={<Parent/>}/>
       </Routes>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet"/>
+     {/* Bootstrap CSS */}
+     
+     {/* Bootstrap Icons */}
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+     
+     {/* jQuery (necessary for Bootstrap's JavaScript plugins) */}
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     
+     {/* Popper.js */}
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+     
+     {/* Bootstrap JS */}
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+gbg2Jj13KBOePhv7ta9tk+1O6wlsVdeux0lf1r" crossOrigin="anonymous"></script>
+
      </Router>
   );
 }

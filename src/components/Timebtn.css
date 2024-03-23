@@ -1,7 +1,7 @@
 .header{
     position:sticky;
     z-index: 1000;
-    top: 0;
+    top: 10px;
     background-color: white;
 }
 .min-bar{
@@ -10,14 +10,19 @@ display: flex;
 width: max-content;
 font-size: 14px;
 color: grey;
-gap: 10px;
+gap: 12px;
 margin: 0 auto;
+padding: 2px 5px;
+border: none;
 
+}
+.min-bar p {
+    margin: 0;
+    padding: 6px 6px;
 }
 .min-bar p:hover{
     color: white;
     background-color: rgb(93, 168, 248);
-    padding: 2px;
     border-radius: 2px;
 }
 .logo{
