@@ -23,12 +23,12 @@ h4{
   right: -1.2rem;
   color: gray;
   }
-  .graph {
+   .graph {
     position: relative;
     background-color: white;
-    padding:  0 6rem;
    
-  }
+  } 
+  
   .box-1,.box-2,.box-3,.box-4{
     background-color: white;
     padding: .5rem 2rem 1rem 2rem;
@@ -119,5 +119,49 @@ font-size: 14px;
   margin: 0 5px;
 }
 @media (max-width:600px){
-
+.values{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+font-size: 14px;
+  column-gap: 5rem;
+  margin: 3px 0;
+}  
+}
+@media (max-width:780px){
+  .graph-container{
+    display: flex;
+    flex-direction: column;
+margin: 0;
+  }
+  .graph{
+    position: relative;
+  }
+  .g_one,.g_two,.g_three,.g_four{
+    width: 250px;
+    height: 250px;
+  }
+  .box-1,.box-2,.box-3,.box-4{
+    padding: 1rem 2rem;
+  }
+  .bar-values{
+    gap: 1.2rem;
+  }
+}
+@media (max-width:1200px){
+  .graph-container{
+      display: flex;
+      flex-direction: column;
+  margin: 0;
+  }
+  .graph{
+    position: relative;
+    padding: 0;
+  }
+  .box-1,.box-2,.box-3,.box-4{
+    padding: 1rem 2rem;
+  }
+  .bar-values{
+    gap: 1.2rem;
+    margin: 0;
+  }
 }

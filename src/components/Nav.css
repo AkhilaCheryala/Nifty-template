@@ -1,0 +1,27 @@
+.nav-bar img{
+ width: 100px;
+ height: 20px;
+}
+.nav-bar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   background-color: white;
+   padding: 1rem;
+}
+.btn_home{
+    border: 0.5px solid rgb(229, 228, 228);
+    border-radius: 2px;
+    background-color: white;
+    padding: 5px 6px;
+    margin-right: 2rem;
+}
+.btn_signup{
+    background-color: rgb(12, 143, 250);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 5px;
+   
+}

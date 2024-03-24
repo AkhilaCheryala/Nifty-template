@@ -8,6 +8,7 @@ import summary from '../assets/summary.svg';
 import Timebtn from "../components/Timebtn";
 import Random from "../components/Random";
 import Values from '../components/Values';
+import Nav from '../components/Nav';
 
 
   const Home = () => {
@@ -18,21 +19,18 @@ import Values from '../components/Values';
   
     const handleTimeIntervalChange = (timeInterval) => {
       setSelectedTimeInterval(timeInterval);
-  
-      let newPosition = pointerPosition + 10; // Default movement
-
-    // Check if the new position exceeds the maximum boundary
+      let newPosition = pointerPosition + 8; 
     if (newPosition > maxPointerPosition) {
-        // Set the position to the minimum and calculate the difference
         newPosition = minPointerPosition + (newPosition - maxPointerPosition);
     } else if (newPosition < minPointerPosition) {
-        newPosition = minPointerPosition; // Set to minimum if below
+        newPosition = minPointerPosition; 
     }
 
     setPointerPosition(newPosition);
     };
   return (
     <main>
+      <Nav/>
       <Timebtn onButtonClick={handleTimeIntervalChange}/>
       
     <div className="container">

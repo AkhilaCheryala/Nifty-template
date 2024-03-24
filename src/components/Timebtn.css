@@ -1,8 +1,11 @@
-.header{
+
+.main-header{
     position:sticky;
     z-index: 1000;
-    top: 10px;
-    background-color: white;
+    top: 0;
+    background-color: rgb(247, 250, 251);
+    padding: 1rem;
+    width: 100%;
 }
 .min-bar{
 background-color: white;
@@ -28,6 +31,9 @@ border: none;
 .logo{
     width: 1.5rem;
     height: 1.5rem;
+    padding: 5px;
+    margin-bottom: -7px;
+   
 
 }
 .logo-container{
@@ -36,4 +42,16 @@ text-align: left;
 }
 .bi-arrow-up-short{
     color: rgb(138, 244, 138);
+}
+@media (max-width:600px){
+    .main-header{
+     background-color: white;
+    }
+    .min-bar{
+        position: fixed;
+        bottom: 0;
+        gap: 5px;
+        padding: 5px 0;
+    }
+
 }

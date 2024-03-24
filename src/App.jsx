@@ -5,6 +5,7 @@ import Timebtn from './components/Timebtn';
 import Random from './components/Random';
 import Values from './components/Values';
 import Parent from './components/Parent';
+import Nav from './components/Nav';
 function App() {
   return (
     <Router>
@@ -14,8 +15,8 @@ function App() {
         <Route exact path ='./Components/Random' element={<Random/>}/>
          <Route exact path='./Components/Values' element ={<Values/>}/>
          <Route exact path='./Component/Parent' element ={<Parent/>}/>
+         <Route exact path='./Component/Nav' element ={<Nav/>}/>
       </Routes>
-     {/* Bootstrap CSS */}
      
      {/* Bootstrap Icons */}
      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />

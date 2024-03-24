@@ -13,7 +13,6 @@ const Values = ({ selectedTimeInterval }) => {
     }, []);
     
     const generateValues = () => {
-        // Logic to generate random values based on the selected time interval
         const getRandomNumber = (min, max) => Math.random() * (max - min) + min;
         const updatedData = [
             { key: 'EMA(20)', value: getRandomNumber(10000, 20000).toFixed(2) },
